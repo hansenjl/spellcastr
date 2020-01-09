@@ -1,0 +1,15 @@
+<h1>Edit <%= @spell.name %></h1>
+
+<form action="/spells/<%= @spell.id %>" method="post">
+  <input type="hidden" name="_method" value="PUT">
+  Name:
+  <input type="text" name="spell[name]" value="<%= @spell.name %>">
+  <br>
+  <br>
+  Description:
+  <input type="text" name="spell[description]" value="<%= @spell.description %>">
+  <br />
+  <br />
+  <input type="submit" value="Edit A Spell!">
+</form>
+<br />

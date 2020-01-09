@@ -1,0 +1,6 @@
+<h1>All my spells:</h1>
+
+<% @spells.each_with_index do |spell, index| %>
+  <a href="/spells/<%= spell.id %>"><%= "#{index + 1}. " + spell.name  %></a>
+  <br />
+<% end %>

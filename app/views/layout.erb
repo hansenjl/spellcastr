@@ -15,7 +15,10 @@
   </head>
   <body>
     <div class="wrapper">
-
+      <% if logged_in? %>
+        <h2>The current wizard is
+  <%= current_wizard.username%></h2>
+     <% end %>
         <%= yield %>
 
       <footer class="branding">
